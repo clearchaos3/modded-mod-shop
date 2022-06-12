@@ -7,6 +7,20 @@ export const Guitars = () => {
     const [color, setColor] = useState('');
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
+    const [sortOrder, setSortOrder] = useState('sortPriceAscending')
+
+    function sortFunction(a, b, sortOrder) {
+        console.log("sortOrder inside function:", sortOrder)
+        if (sortOrder === 'sortPriceAscending') {
+            let keyA = parseInt(a.price.replace(/[$,]+/g, ""))
+            let keyB = parseInt(b.price.replace(/[$,]+/g, ""))
+            if (keyA < keyB) return -1;
+            if (keyA > keyB) return 1;
+            return 0;
+        }
+    }
+
+    console.log("sortOrder:", sortOrder)
 
     return (
         <div>
@@ -17,7 +31,8 @@ export const Guitars = () => {
                     <input id="minPriceFilter" placeholder="Minimum Price" name="filter" type="text" value={minPrice} onChange={event => setMinPrice(event.target.value)}></input>
                     <input id="maxPriceFilter" placeholder="Maximum Price" name="filter" type="text" value={maxPrice} onChange={event => setMaxPrice(event.target.value)}></input>
                 </div>
-                {guitarData.filter(f => (
+                <div><button onClick={() => setSortOrder('sortPriceAscending')}>Price <span role="img" aria-label="Index Pointing Up">👆</span></button></div>
+                {guitarData.sort(sortFunction).filter(f => (
                     (f.model.toLowerCase().includes(model.toLowerCase()) || model === '')
                     && (f.color.toLowerCase().includes(color.toLowerCase()) || color === '')
                     && (parseFloat(f.price.replace(/[$,]+/g, "")) > minPrice || minPrice === '')
