@@ -48,23 +48,17 @@ export const Guitars = () => {
         }
     };
 
-    const inputGroup = () => {
-        return (
-            <div className="centered">
-                <input id="modelFilter" placeholder="Model" name="filter" type="text" value={model} onChange={event => setModel(event.target.value)}></input>
-                <input id="colorFilter" placeholder="Color" name="filter" type="text" value={color} onChange={event => setColor(event.target.value)}></input>
-                <input id="minPriceFilter" placeholder="Minimum Price" name="filter" type="text" value={minPrice} onChange={event => setMinPrice(event.target.value)}></input>
-                <input id="maxPriceFilter" placeholder="Maximum Price" name="filter" type="text" value={maxPrice} onChange={event => setMaxPrice(event.target.value)}></input>
-            </div>
-        )
-    }
-
     return (
         <div>
             <div className="header">
                 <div className="title"><img src="https://images.ctfassets.net/m8onsx4mm13s/72p8qgeqA4UK7FD2MwyA19/cbc4a71ff92b788b791a53fa683dc6f4/gibson__1_.svg" alt="gibson logo"></img>Modded Mod Shop</div>
 
-                {inputGroup()}
+                <div className="centered">
+                    <input id="modelFilter" placeholder="Model" name="filter" type="text" value={model} onChange={event => setModel(event.target.value)}></input>
+                    <input id="colorFilter" placeholder="Color" name="filter" type="text" value={color} onChange={event => setColor(event.target.value)}></input>
+                    <input id="minPriceFilter" placeholder="Minimum Price" name="filter" type="text" value={minPrice} onChange={event => setMinPrice(event.target.value)}></input>
+                    <input id="maxPriceFilter" placeholder="Maximum Price" name="filter" type="text" value={maxPrice} onChange={event => setMaxPrice(event.target.value)}></input>
+                </div>
 
                 <div className="centered">
                     <button id="priceAscending" className={"sortButton " + (sortOrder === 'priceAscending' ? 'activeButton' : '')} onClick={() => setSortOrder('priceAscending')}><span role="img" aria-label="Money Bag">💰</span><span role="img" aria-label="Index Pointing Up">👆</span></button>
