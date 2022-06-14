@@ -30,16 +30,16 @@ export const Guitars = () => {
                 };
             case 'modelAscending':
                 return function (a, b) {
-                    let keyA = a.model
-                    let keyB = b.model
+                    let keyA = a.model.trim();
+                    let keyB = b.model.trim();
                     if (keyA < keyB) return -1;
                     if (keyA > keyB) return 1;
                     return 0;
                 };
             case 'modelDescending':
                 return function sortModelDescending(a, b) {
-                    let keyA = a.model
-                    let keyB = b.model
+                    let keyA = a.model.trim();
+                    let keyB = b.model.trim();
                     if (keyA > keyB) return -1;
                     if (keyA < keyB) return 1;
                     return 0;
@@ -93,7 +93,7 @@ export const Guitars = () => {
                                 <div key={key} className="card">
                                     <img src={'./resizedImages' + data.image.substring(data.image.indexOf('/RAM'), data.image.length - 3) + 'jpg'} alt="guitar" />
                                     <div className="cardText">
-                                        <div className="model">{data.model}</div>
+                                        <div className="model">{data.model.trim()}</div>
                                         <div className="color">{data.color}</div>
                                         <div className="price">{data.price}</div>
                                     </div>
