@@ -7,7 +7,8 @@ export const Guitars = () => {
     const [color, setColor] = useState('');
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
-    const [sortOrder, setSortOrder] = useState('priceAscending')
+    const [sortOrder, setSortOrder] = useState('priceAscending');
+    const [theme, setTheme] = useState('dark');
 
     const sortFunction = (sortProperty) => {
         switch (sortProperty) {
@@ -48,10 +49,21 @@ export const Guitars = () => {
         }
     };
 
+    const toggleTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light'
+        setTheme(newTheme)
+    }
+
+    const themeImage = (theme) => {
+        const themeImage = theme === 'light' ? 'https://i.ibb.co/pxR5GY4/gibson-Light.jpg' : 'https://i.ibb.co/Fns5NjN/gibson-Dark.jpg'
+        return themeImage
+    }
+
     return (
-        <div>
+        <div className={theme}>
             <div className="header">
-                <div className="title"><img src="https://images.ctfassets.net/m8onsx4mm13s/72p8qgeqA4UK7FD2MwyA19/cbc4a71ff92b788b791a53fa683dc6f4/gibson__1_.svg" alt="gibson logo"></img>Modded Mod Shop</div>
+                <button className="themeButton" onClick={() => toggleTheme()}><span role="img" aria-label="Lightbulb">💡</span></button>
+                <div className="title"><img src={themeImage(theme)} alt="gibson logo"></img><span>Modded Mod Shop</span></div>
 
                 <div className="centered">
                     <input id="modelFilter" placeholder="Model" name="filter" type="text" value={model} onChange={event => setModel(event.target.value)}></input>

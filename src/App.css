@@ -2,8 +2,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fff;
   color: #333;
+}
+
+.dark {
+  background-color: #111;
 }
 
 img {
@@ -11,11 +14,21 @@ img {
   border-radius: 24px;
 }
 
+.title img {
+  height: 85px;
+  width: 129px;
+}
+
 .header {
   position: sticky;
   top: 0;
   background-color: #fff;
   box-shadow: 0px 0px 8px hsl(0deg 0% 0% / 0.2);
+}
+
+.dark .header {
+  background-color: #111;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -27,9 +40,8 @@ img {
   justify-content: center;
 }
 
-.title img {
-  height: 85px;
-  width: 129px;
+.dark .title {
+  color: #ddd;
 }
 
 .card {
@@ -38,6 +50,11 @@ img {
   padding: 12px;
   width: 20em;
   box-shadow: 4px 4px 8px hsl(0deg 0% 0% / 0.1);
+}
+
+.dark .card {
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  color: #ddd;
 }
 
 .cards {
@@ -80,6 +97,22 @@ input:not(:placeholder-shown) {
   box-shadow: inset 4px 4px 8px hsl(0deg 0% 0% / 0.1);
 }
 
+.dark input {
+  background-color: #111;
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.2);
+  color: #ddd;
+}
+
+.dark input:focus {
+  outline: none;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.dark input:not(:placeholder-shown) {
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+
 .sortButton {
   width: 10vw;
   background-color: #fff;
@@ -91,11 +124,33 @@ input:not(:placeholder-shown) {
   border-radius: 24px;
 }
 
+.dark .sortButton {
+  background-color: #111;
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
 .activeButton {
-  box-shadow: inset 4px 4px 8px hsl(0deg 0% 0% / 0.1);
+  box-shadow: inset 2px 2px 4px hsl(0deg 0% 0% / 0.2);
+}
+
+.dark .activeButton {
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 .centered {
   display: flex;
   justify-content: center;
+}
+
+.themeButton {
+  background-color: #fff;
+  border: 0;
+  border-radius: 24px;
+  font-size: 28px;
+  float: right;
+  margin: 12px;
+}
+
+.dark .themeButton {
+  background-color: #111;
 }
