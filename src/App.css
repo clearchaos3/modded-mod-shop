@@ -16,7 +16,7 @@ img {
 
 .card img:hover {
   transform: scale(3);
-  transition: all 0.3s ease .5s;
+  transition: all 0.3s ease 0s;
 }
 
 .title img {
@@ -160,9 +160,33 @@ input:not(:placeholder-shown) {
   background-color: #111;
 }
 
-@media only screen and (max-width: 812px) {
+footer {
+  font-size: large;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 900;
+}
+
+.dark footer {
+  color: #ddd;
+}
+
+.contactLinks {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 844px) {
   .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
   }
 
@@ -178,14 +202,19 @@ input:not(:placeholder-shown) {
     width: 15vw;
   }
 
+  .themeButton {
+    font-size: 18px;
+    margin: 6px;
+  }
+
   img {
     width: 7em;
     border-radius: 24px;
   }
 
   .title img {
-    height: 85px;
-    width: 129px;
+    height: 42px;
+    width: 64px;
   }
 
   .card {

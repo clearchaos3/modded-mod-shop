@@ -102,6 +102,17 @@ export const Guitars = () => {
                         })}
                 </div>
             </div>
+            <footer>
+                <div className="contactLinks">
+                    <a href="mailto: ryanleestl@gmail.com">
+                        <span role="img" aria-label="Email">📧</span>
+                    </a>
+                    <a href="https://github.com/clearchaos3/modded-mod-shop">
+                        <span role="img" aria-label="Man Technologist">👨‍💻</span>
+                    </a>
+                </div>
+                <div>Made by <strong>Ryan Lee</strong></div>
+            </footer>
         </div>
     );
 };
