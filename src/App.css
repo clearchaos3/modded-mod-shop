@@ -14,6 +14,11 @@ img {
   border-radius: 24px;
 }
 
+.card img:hover {
+  transform: scale(3);
+  transition: all 0.3s ease .5s;
+}
+
 .title img {
   height: 85px;
   width: 129px;
@@ -117,7 +122,7 @@ input:not(:placeholder-shown) {
   width: 10vw;
   background-color: #fff;
   border: 0;
-  font-size: 28px;
+  font-size: 26px;
   box-shadow: 4px 4px 8px hsl(0deg 0% 0% / 0.1);
   margin: 12px;
   padding: 4px;
@@ -153,4 +158,50 @@ input:not(:placeholder-shown) {
 
 .dark .themeButton {
   background-color: #111;
+}
+
+@media only screen and (max-width: 812px) {
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  input {
+    width: 20vw;
+    font-size: small;
+    margin: 6px;
+    padding: 6px;
+  }
+
+  .sortButton {
+    font-size: 18px;
+    width: 15vw;
+  }
+
+  img {
+    width: 7em;
+    border-radius: 24px;
+  }
+
+  .title img {
+    height: 85px;
+    width: 129px;
+  }
+
+  .card {
+    border-radius: 24px;
+    margin: 12px;
+    padding: 12px;
+    width: 7em;
+  }
+
+  .card img:hover {
+    transform: scale(0);
+    transition: all 0s ease 500s;
+  }
+
+  .cardText {
+    margin: 6px 0 6px 0;
+    font-size: medium;
+  }
 }

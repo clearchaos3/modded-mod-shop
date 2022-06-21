@@ -8,7 +8,7 @@ export const Guitars = () => {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [sortOrder, setSortOrder] = useState('priceAscending');
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
 
     const sortFunction = (sortProperty) => {
         switch (sortProperty) {
@@ -68,8 +68,8 @@ export const Guitars = () => {
                 <div className="centered">
                     <input id="modelFilter" placeholder="Model" name="filter" type="text" value={model} onChange={event => setModel(event.target.value)}></input>
                     <input id="colorFilter" placeholder="Color" name="filter" type="text" value={color} onChange={event => setColor(event.target.value)}></input>
-                    <input id="minPriceFilter" placeholder="Minimum Price" name="filter" type="text" value={minPrice} onChange={event => setMinPrice(event.target.value)}></input>
-                    <input id="maxPriceFilter" placeholder="Maximum Price" name="filter" type="text" value={maxPrice} onChange={event => setMaxPrice(event.target.value)}></input>
+                    <input id="minPriceFilter" placeholder="💲Min" name="filter" type="text" value={minPrice} onChange={event => setMinPrice(event.target.value)}></input>
+                    <input id="maxPriceFilter" placeholder="💲Max" name="filter" type="text" value={maxPrice} onChange={event => setMaxPrice(event.target.value)}></input>
                 </div>
 
                 <div className="centered">
@@ -84,14 +84,14 @@ export const Guitars = () => {
                     {guitarData.sort(sortFunction(sortOrder)).filter(f => (
                         (f.model.toLowerCase().includes(model.toLowerCase()) || model === '')
                         && (f.color.toLowerCase().includes(color.toLowerCase()) || color === '')
-                        && (parseFloat(f.price.replace(/[$,]+/g, "")) > minPrice || minPrice === '')
-                        && (parseFloat(f.price.replace(/[$,]+/g, "")) < maxPrice || maxPrice === '')
+                        && (parseFloat(f.price.replace(/[$,]+/g, "")) >= minPrice || minPrice === '')
+                        && (parseFloat(f.price.replace(/[$,]+/g, "")) <= maxPrice || maxPrice === '')
                     )
                     )
                         .map((data, key) => {
                             return (
                                 <div key={key} className="card">
-                                    <img src={'./resizedImages' + data.image.substring(data.image.indexOf('/RAM'), data.image.length - 3) + 'jpg'} alt="guitar" />
+                                    <img id={key} src={'./resizedImages' + data.image.substring(data.image.indexOf('/RAM'), data.image.length - 3) + 'jpg'} alt="guitar" />
                                     <div className="cardText">
                                         <div className="model">{data.model.trim()}</div>
                                         <div className="color">{data.color}</div>
