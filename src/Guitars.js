@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import { guitarData } from "./data";
 
+
 export const Guitars = () => {
+
     const [model, setModel] = useState('');
     const [color, setColor] = useState('');
     const [minPrice, setMinPrice] = useState('');
@@ -58,6 +60,33 @@ export const Guitars = () => {
         const themeImage = theme === 'light' ? 'https://i.ibb.co/pxR5GY4/gibson-Light.jpg' : 'https://i.ibb.co/Fns5NjN/gibson-Dark.jpg'
         return themeImage
     }
+
+    const body = document.body;
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= 0) {
+            body.classList.remove(scrollUp);
+            return;
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+            // down
+            body.classList.remove(scrollUp);
+            body.classList.add(scrollDown);
+        } else if (
+            currentScroll < lastScroll &&
+            body.classList.contains(scrollDown)
+        ) {
+            // up
+            body.classList.remove(scrollDown);
+            body.classList.add(scrollUp);
+        }
+        lastScroll = currentScroll;
+    });
 
     return (
         <div className={theme}>
