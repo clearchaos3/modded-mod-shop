@@ -10,7 +10,7 @@ export const Guitars = () => {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [sortOrder, setSortOrder] = useState('priceAscending');
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
 
     const sortFunction = (sortProperty) => {
         switch (sortProperty) {
@@ -91,8 +91,24 @@ export const Guitars = () => {
     return (
         <div className={theme}>
             <div className="header">
-                <button className="themeButton" onClick={() => toggleTheme()}><span role="img" aria-label="Lightbulb">💡</span></button>
-                <div className="title"><img src={themeImage(theme)} alt="gibson logo"></img><span>Modded Mod Shop</span></div>
+                <div className="titleAndCountAndLightbulb">
+                    <div className="title">
+                        <img src={themeImage(theme)} alt="gibson logo"></img>
+                        <span>Modded Mod Shop</span>
+                    </div>
+                    <div className="countAndLightbulb">
+                        <div className="listCount">{guitarData.sort(sortFunction(sortOrder)).filter(f => (
+                            (f.model.toLowerCase().includes(model.toLowerCase()) || model === '')
+                            && (f.color.toLowerCase().includes(color.toLowerCase()) || color === '')
+                            && (parseFloat(f.price.replace(/[$,]+/g, "")) >= minPrice || minPrice === '')
+                            && (parseFloat(f.price.replace(/[$,]+/g, "")) <= maxPrice || maxPrice === '')
+                        )
+                        ).length + " Results"}</div>
+                        <button className="themeButton" onClick={() => toggleTheme()}>
+                            <span role="img" aria-label="Lightbulb">💡</span>
+                        </button>
+                    </div>
+                </div>
 
                 <div className="centered">
                     <input id="modelFilter" placeholder="Model" name="filter" type="text" value={model} onChange={event => setModel(event.target.value)}></input>

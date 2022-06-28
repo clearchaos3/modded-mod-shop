@@ -11,7 +11,7 @@ body {
 
 img {
   width: 20em;
-  border-radius: 24px;
+  border-radius: 24px 24px 0px 0px;
 }
 
 .card img:hover {
@@ -22,7 +22,12 @@ img {
 
 .card:hover {
   transition: all 0.5s ease .1s;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark .card:hover {
+  transition: all 0.5s ease .1s;
+  box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.2);
 }
 
 .title img {
@@ -58,15 +63,16 @@ img {
 
 .card {
   border-radius: 24px;
-  margin: 12px;
-  padding: 12px;
+  margin: 1em;
   width: 20em;
-  box-shadow: 4px 4px 8px hsl(0deg 0% 0% / 0.1);
+  box-shadow: 4px 4px 8px hsl(0deg 0% 0% / 0.2);
+  background-color: #fff;
 }
 
 .dark .card {
   box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
   color: #ddd;
+  background-color: #111;
 }
 
 .cards {
@@ -78,6 +84,7 @@ img {
 .cardText {
   margin: 12px 0 12px 0;
   font-size: large;
+  text-align: center;
 }
 
 .model {
@@ -159,8 +166,7 @@ input:not(:placeholder-shown) {
   border: 0;
   border-radius: 24px;
   font-size: 28px;
-  float: right;
-  margin: 12px;
+  margin: 6px;
 }
 
 .dark .themeButton {
@@ -195,8 +201,30 @@ a {
   transform: translate3d(0, -100%, 0);
 }
 
+.listCount {
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  color: #aaa;
+  margin: 6px;
+  padding: 1px 6px;
+}
 
-@media only screen and (max-width: 844px) {
+.titleAndCountAndLightbulb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countAndLightbulb {
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  right: 1em;
+}
+
+
+@media only screen and (max-width:1040px) {
   .title {
     font-size: 20px;
     font-weight: 900;
@@ -244,5 +272,9 @@ a {
   .cardText {
     margin: 6px 0 6px 0;
     font-size: medium;
+  }
+
+  .listCount {
+    font-size: 10px;
   }
 }
