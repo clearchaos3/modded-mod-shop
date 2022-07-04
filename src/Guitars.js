@@ -39,11 +39,27 @@ export const Guitars = () => {
                     return 0;
                 };
             case 'modelDescending':
-                return function sortModelDescending(a, b) {
+                return function (a, b) {
                     let keyA = a.model.trim();
                     let keyB = b.model.trim();
                     if (keyA > keyB) return -1;
                     if (keyA < keyB) return 1;
+                    return 0;
+                };
+            case 'releaseAscending':
+                return function (a, b) {
+                    let keyA = a.image.replace("./Gibson _ Gibson Mod Collection_files/", "");
+                    let keyB = b.image.replace("./Gibson _ Gibson Mod Collection_files/", "");
+                    if (keyA > keyB) return -1;
+                    if (keyA < keyB) return 1;
+                    return 0;
+                };
+            case 'releaseDescending':
+                return function (a, b) {
+                    let keyA = a.image.replace("./Gibson _ Gibson Mod Collection_files/", "");
+                    let keyB = b.image.replace("./Gibson _ Gibson Mod Collection_files/", "");
+                    if (keyA < keyB) return -1;
+                    if (keyA > keyB) return 1;
                     return 0;
                 };
             default:
@@ -122,6 +138,8 @@ export const Guitars = () => {
                     <button id="priceDescending" className={"sortButton " + (sortOrder === 'priceDescending' ? 'activeButton' : '')} onClick={() => setSortOrder('priceDescending')}><span role="img" aria-label="Money Bag">💰</span><span role="img" aria-label="Index Pointing Down">👇</span></button>
                     <button id="modelAscending" className={"sortButton " + (sortOrder === 'modelAscending' ? 'activeButton' : '')} onClick={() => setSortOrder('modelAscending')}><span role="img" aria-label="Guitar">🎸</span><span role="img" aria-label="Index Pointing Up">👆</span></button>
                     <button id="modelDescending" className={"sortButton " + (sortOrder === 'modelDescending' ? 'activeButton' : '')} onClick={() => setSortOrder('modelDescending')}><span role="img" aria-label="Guitar">🎸</span><span role="img" aria-label="Index Pointing Down">👇</span></button>
+                    <button id="releaseAscending" className={"sortButton " + (sortOrder === 'releaseAscending' ? 'activeButton' : '')} onClick={() => setSortOrder('releaseAscending')}><span role="img" aria-label="Calendar">📅</span><span role="img" aria-label="Index Pointing Up">👆</span></button>
+                    <button id="releaseDescending" className={"sortButton " + (sortOrder === 'releaseDescending' ? 'activeButton' : '')} onClick={() => setSortOrder('releaseDescending')}><span role="img" aria-label="Calendar">📅</span><span role="img" aria-label="Index Pointing Down">👇</span></button>
                 </div>
             </div>
             <div className="guitar-container">

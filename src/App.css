@@ -219,8 +219,6 @@ a {
 .countAndLightbulb {
   display: inline-flex;
   align-items: center;
-  position: fixed;
-  right: 1em;
 }
 
 
