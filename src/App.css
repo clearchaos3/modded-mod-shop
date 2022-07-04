@@ -236,13 +236,13 @@ a {
   }
 
   .sortButton {
-    font-size: 18px;
+    font-size: 16px;
     width: 15vw;
   }
 
   .themeButton {
     font-size: 18px;
-    margin: 6px;
+    margin: 4px;
   }
 
   img {
