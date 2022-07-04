@@ -1195,6 +1195,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017759-1.png"
         },
         {
+            "color": "Soot Sparkle",
+            "model": "Non-Reverse Thunderbird Bass VOS",
+            "price": "$2,199.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018031-1.png"
+        },
+        {
+            "color": "Ink Stripe Sparkle",
+            "model": "Les Paul Studio",
+            "price": "$2,099.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018113-1.png"
+        },
+        {
             "color": "Alpine Magic",
             "model": "Non-Reverse Thunderbird",
             "price": "$2,099.00",
@@ -1355,6 +1367,18 @@ export const guitarData =
             "model": "ES-335 Figured",
             "price": "$3,599.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017886-1.png"
+        },
+        {
+            "color": "Red Berry Sparkle",
+            "model": "Les Paul Studio",
+            "price": "$1,799.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017019-1.png"
+        },
+        {
+            "color": "Worn Brown",
+            "model": "SG Tribute",
+            "price": "$1,199.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018246-1.png"
         },
         {
             "color": "Flat Black",
@@ -1537,6 +1561,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM018018-1.png"
         },
         {
+            "color": "Aubergine Sparkle",
+            "model": "Les Paul Traditional",
+            "price": "$2,399.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018072-1.png"
+        },
+        {
+            "color": "Unburst",
+            "model": "Les Paul Standard 60s",
+            "price": "$2,699.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018302-1.png"
+        },
+        {
             "color": "Smokehouse Burst",
             "model": "Les Paul Studio",
             "price": "$1,299.00",
@@ -1703,6 +1739,18 @@ export const guitarData =
             "model": "ES-335",
             "price": "$2,799.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017817-1.png"
+        },
+        {
+            "color": "Uranium Yellow",
+            "model": "SG Standard '61 Stop Bar (Left-Handed)",
+            "price": "$1,999.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017651-1.png"
+        },
+        {
+            "color": "Walnut",
+            "model": "ES-335 VOS",
+            "price": "$2,999.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018219-1.png"
         },
         {
             "color": "Crimson Elf Blood",
@@ -1879,6 +1927,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM018118-3.png"
         },
         {
+            "color": "Antique Pelham Blue",
+            "model": "1963 SG Special Reissue Light Aged",
+            "price": "$5,299.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018204-1.png"
+        },
+        {
+            "color": "Burnt Maroon Metallic",
+            "model": "SG Custom",
+            "price": "$3,699.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017806-1.png"
+        },
+        {
             "color": "Golden Poppy Burst",
             "model": "60th Anniversary 1959 Les Paul Standard",
             "price": "$5,299.00",
@@ -1939,7 +1999,7 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM016041-1.png"
         },
         {
-            "color": "Chill Bl\u00fcPearl",
+            "color": "Chill BlüPearl",
             "model": "70s Explorer",
             "price": "$2,899.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM015947-1.png"
@@ -2053,10 +2113,16 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017575-1.png"
         },
         {
-            "color": "Cherry Red",
-            "model": "1961 Les Paul SG Standard Reissue VOS",
-            "price": "$3,599.00",
-            "image": "./Gibson _ Gibson Mod Collection_files/RAM018128-1.png"
+            "color": "Hunter Green",
+            "model": "Les Paul Standard 50s",
+            "price": "$2,899.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017940-1.png"
+        },
+        {
+            "color": "Glass Ghost Satin",
+            "model": "ES-335 Dot",
+            "price": "$3,399.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018231-1.png"
         },
         {
             "color": "Satin Royal Teaburst",
@@ -2221,10 +2287,16 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017913-1.png"
         },
         {
-            "color": "Verdoro Green",
-            "model": "1967 Flying V Reissue VOS",
-            "price": "$5,399.00",
-            "image": "./Gibson _ Gibson Mod Collection_files/RAM018177-1.png"
+            "color": "Hang Ten Green",
+            "model": "Les Paul Studio",
+            "price": "$1,899.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018058-1.png"
+        },
+        {
+            "color": "Worn Brown",
+            "model": "SG Tribute",
+            "price": "$1,199.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018224-1.png"
         },
         {
             "color": "Pyrite Treasure",
@@ -2407,6 +2479,12 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM018095-1.png"
         },
         {
+            "color": "Saddle Brown Sparkle",
+            "model": "70s Flying V",
+            "price": "$2,299.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017955-1.png"
+        },
+        {
             "color": "Ebony",
             "model": "Les Paul Classic",
             "price": "$1,799.00",
@@ -2573,6 +2651,18 @@ export const guitarData =
             "model": "Les Paul Tribute",
             "price": "$2,399.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017980-1.png"
+        },
+        {
+            "color": "Transparent Emerald Gloss",
+            "model": "Les Paul Standard 60s",
+            "price": "$2,499.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018064-1.png"
+        },
+        {
+            "color": "Sixties Cherry",
+            "model": "ES-345",
+            "price": "$3,499.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018261-1.png"
         },
         {
             "color": "Roasted Rudy",
@@ -2749,6 +2839,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017682-1.png"
         },
         {
+            "color": "Natural Satin",
+            "model": "SG Special",
+            "price": "$1,699.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017516-1.png"
+        },
+        {
+            "color": "Translucent Cherry Amber",
+            "model": "Les Paul Classic VOS",
+            "price": "$2,299.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017790-1.png"
+        },
+        {
             "color": "Graphite",
             "model": "Les Paul Modern",
             "price": "$2,399.00",
@@ -2903,6 +3005,18 @@ export const guitarData =
             "model": "Les Paul Special",
             "price": "$2,199.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017713-1.png"
+        },
+        {
+            "color": "Honeyburst Satin",
+            "model": "Les Paul Classic",
+            "price": "$2,299.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018222-1.png"
+        },
+        {
+            "color": "Goldtop",
+            "model": "1957 Les Paul Reissue Ultra Light Aged",
+            "price": "$5,299.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018198-1.png"
         },
         {
             "color": "Satin Southern Fade",
@@ -3065,6 +3179,18 @@ export const guitarData =
             "model": "Les Paul Custom Axcess VOS",
             "price": "$5,199.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017925-1.png"
+        },
+        {
+            "color": "Natural Satin",
+            "model": "Les Paul Standard 50s Darkback",
+            "price": "$2,799.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018232-1.png"
+        },
+        {
+            "color": "Blueberry Burst",
+            "model": "Les Paul Classic",
+            "price": "$2,199.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018223-1.png"
         },
         {
             "color": "Dark Bourbon Fade",
@@ -3247,6 +3373,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017950-1.png"
         },
         {
+            "color": "Pied-de-poule Prism",
+            "model": "SG Standard ‘61",
+            "price": "$2,499.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017995-1.png"
+        },
+        {
+            "color": "Vintage Cherry",
+            "model": "SG Standard '61 Stop Bar",
+            "price": "$1,899.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018292-1.png"
+        },
+        {
             "color": "Ebony",
             "model": "SG Standard",
             "price": "$1,299.00",
@@ -3296,7 +3434,7 @@ export const guitarData =
         },
         {
             "color": "Pearlple Destiny",
-            "model": "SG Standard \u201861",
+            "model": "SG Standard ‘61",
             "price": "$2,499.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM015942-1.png"
         },
@@ -3419,6 +3557,18 @@ export const guitarData =
             "model": "Les Paul Traditional",
             "price": "$2,399.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM018054-1.png"
+        },
+        {
+            "color": "Sparkling Burgundy",
+            "model": "Les Paul Modern VOS (Left-Handed)",
+            "price": "$2,499.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018056-1.png"
+        },
+        {
+            "color": "Iced Tea Fade",
+            "model": "1959 Les Paul Standard Reissue",
+            "price": "$5,599.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018296-1.png"
         },
         {
             "color": "Heritage Cherry Sunburst",
@@ -3583,6 +3733,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017018-1.png"
         },
         {
+            "color": "Midnight Armor",
+            "model": "SG Tribute",
+            "price": "$1,599.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017946-1.png"
+        },
+        {
+            "color": "Goldtop",
+            "model": "Les Paul Standard 50s with Navy Stripes",
+            "price": "$2,899.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018190-1.png"
+        },
+        {
             "color": "Goldtop",
             "model": "Les Paul Standard 50s P-90",
             "price": "$1,999.00",
@@ -3721,6 +3883,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM018086-1.png"
         },
         {
+            "color": "Espresso Satin",
+            "model": "Les Paul Studio",
+            "price": "$1,599.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018055-1.png"
+        },
+        {
+            "color": "Cherry",
+            "model": "ES-339",
+            "price": "$2,599.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018238-1.png"
+        },
+        {
             "color": "Heritage Cherry Sunburst",
             "model": "Les Paul Standard 50s",
             "price": "$1,999.00",
@@ -3827,6 +4001,12 @@ export const guitarData =
             "model": "Les Paul Junior with Pinstripes",
             "price": "$1,799.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM016154-1.png"
+        },
+        {
+            "color": "Orange Push Pop",
+            "model": "70s Flying V",
+            "price": "$2,099.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM017419-1.png"
         },
         {
             "color": "Satin Cherry",
@@ -3953,6 +4133,12 @@ export const guitarData =
             "model": "Les Paul Custom",
             "price": "$4,599.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017402-1.png"
+        },
+        {
+            "color": "Ebony",
+            "model": "Les Paul Studio",
+            "price": "$1,399.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018273-1.png"
         },
         {
             "color": "Tangerine Burst",
@@ -4243,7 +4429,7 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM015394-1.png"
         },
         {
-            "color": "B\u00e9ton Brut",
+            "color": "Béton Brut",
             "model": "1957 Les Paul Junior Single Cut",
             "price": "$3,999.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM012859-1.png"
@@ -4273,6 +4459,18 @@ export const guitarData =
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017610-1.png"
         },
         {
+            "color": "Cherry Red",
+            "model": "1961 Les Paul SG Standard Reissue VOS",
+            "price": "$3,599.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018128-1.png"
+        },
+        {
+            "color": "Vintage Burst Satin",
+            "model": "ES-335",
+            "price": "$2,499.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018242-1.png"
+        },
+        {
             "color": "Nickel Sparkleblast",
             "model": "EDS-1275 Double Neck Stereo",
             "price": "$9,999.00",
@@ -4283,6 +4481,12 @@ export const guitarData =
             "model": "ES-335",
             "price": "$5,199.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017562-1.png"
+        },
+        {
+            "color": "Verdoro Green",
+            "model": "1967 Flying V Reissue VOS",
+            "price": "$5,399.00",
+            "image": "./Gibson _ Gibson Mod Collection_files/RAM018177-1.png"
         },
         {
             "color": "Pearly Tuxedo",
@@ -4313,18 +4517,6 @@ export const guitarData =
             "model": "Les Paul Standard 50s",
             "price": "$2,899.00",
             "image": "./Gibson _ Gibson Mod Collection_files/RAM017888-1.png"
-        },
-        {
-            "color": "Cinnamon Challenge Metallic",
-            "model": "60th Anniversary 1961 SG Les Paul Standard",
-            "price": "$4,599.00",
-            "image": "./Gibson _ Gibson Mod Collection_files/RAM017688-1.png"
-        },
-        {
-            "color": "Amber Natural Thin Satin",
-            "model": "ES-335 Figured",
-            "price": "$3,999.00",
-            "image": "./Gibson _ Gibson Mod Collection_files/RAM017577-1.png"
         },
         {
             "color": "Antique Natural Satin back",
